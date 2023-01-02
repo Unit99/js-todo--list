@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    overflow-x: hidden;
+    background-color: #fff;    
+}
+
+.container{
+    width: 100%;
+    min-width: 500px;
+    background-color: blanchedalmond;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+h2{
+    padding: 1em;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+form{
+    width: 100%;
+    display: inline-block;
+    padding: 0 1em;
+    position: relative;
+}
+
+input[type=text]{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit],
+button{
+    display: inline-block;
+    cursor: pointer;
+    background-color: #000;
+    padding: .5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+button.clear-tasks{
+    background-color: rgb(233, 40, 40);
+    color: rgb(255, 255, 255);
+}
+
+label{
+    position: absolute;
+    left: 1.4rem;
+    z-index: 0;
+    transform: translateY(-42px);
+    transform-origin: left center;
+    transition: transform linear .3s;
+}
+
+input[type=text]:focus + label{
+    transform: translateY(-70px) scale(.8);
+    transition: transform linear .3s;
+}
+
+input[type=text]#filter-task{
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #000;
+}
+
+input[type=text]#filter-task::placeholder{
+    color: #000;
+}
+
+.collection,
+.task-list{
+    width: 100%;
+    margin-top: 15px;
+    padding: 1rem;
+}
+
+.collection{
+    border-top: 1px solid #000;
+}
+
+.task-list{
+    padding-left: 0;
+    padding-right: 0;
+    list-style: none;
+}
+
+.list-item{
+    width: 100%;
+    background-color: rgb(236, 89, 9);
+    border-radius: 4px;
+    border: 1px solid rgb(198, 71, 16);
+    margin-bottom: 5px;
+    padding: .4rem;
+    color: #fff;
+}
+
+.remove-item{
+    float: right;
+    cursor: pointer;
+}
+
+.remove-item i.fa-remove{
+    color: #fff;
+}
+

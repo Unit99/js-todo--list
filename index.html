@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo--list</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Todo List</h2>
+        <form>
+            <input type="text" name="add" id="add">
+            <label for="add">Add new task</label>
+            <input type="submit" value="Add task">
+        </form>
+        
+        <div class="collection">
+            <h3>Task List</h3>
+            <input type="text" placeholder="Search any task..." name="filter-task" id="filter-task">
+            <ul class="task-list"></ul>
+            <button class="clear-tasks">Clear tasks</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
